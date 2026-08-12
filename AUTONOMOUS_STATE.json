@@ -1,8 +1,19 @@
 {
   "schema_version": 1,
   "openreview_id": "KpaQc72q7m",
-  "phase": "claim_1_attempt_1_source_cpu_feasibility_audit_complete_inconclusive",
-  "next_action": "independent_review_claim_1_source_cpu_feasibility_audit_before_any_claim_1_toy",
+  "paper": {
+    "title": "Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation",
+    "authors": [
+      "Denis Rakitin",
+      "Ivan Shchekotov",
+      "Dmitry Vetrov"
+    ],
+    "arxiv": "2406.14762v1",
+    "venue_note": "Accepted to the Structured Probabilistic Inference and Generative Modeling workshop of ICML 2024"
+  },
+  "classification": "paper-associated source-pinned local reproduction audit",
+  "phase": "claim_1_source_audit_and_claim_4_non_reproducing_toy_documented",
+  "next_action": "independent_review_claim_1_before_any_faithful_rdmd_training_reproduction",
   "active_run_ids": [],
   "claim_attempt_counts": {
     "1": 1,
@@ -13,10 +24,10 @@
   },
   "publication_allowed": false,
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
-  "cpu_feasibility": "Claim 4 source-described 2D Gaussian-to-8-Gaussian experiment is a CPU-feasible direct toy route; image translation benchmark claims require unavailable full-scale training.",
+  "cpu_feasibility": "Claim 1 is a theoretical-optimum statement and cannot be established or falsified by finite CPU optimization; Claim 4's paper-faithful neural training path is not implemented here.",
   "claim_1_outcome": {
     "verdict": "inconclusive",
-    "scope": "Pinned-primary-source theorem/CPU feasibility audit; finite CPU optimization cannot establish or falsify the universal theoretical-optimum gamma-convergence claim.",
+    "scope": "Pinned-primary-source theorem/CPU feasibility audit; finite CPU optimization cannot establish or falsify the universal theoretical-optimum convergence claim.",
     "evidence": [
       "evidence/claim1_attempt1/SOURCE_AUDIT.md",
       "evidence/claim1_attempt1/source_excerpt.tex",
@@ -24,8 +35,9 @@
     ]
   },
   "claim_4_outcome": {
-    "verdict": "toy",
-    "scope": "Reduced local CPU Gaussian-to-8-Gaussian assignment surrogate with squared transport cost, radial target-fidelity proxy, and strict segment-intersection metric at lambda 0/.2/1; not trained RDMD or a Section 5.1 figure reproduction.",
+    "verdict": "non_reproducing_toy",
+    "scope": "Reduced deterministic assignment surrogate preserving 2-D Gaussian/8-Gaussian inputs, squared transport cost, radial target-fidelity proxy, and strict segment intersections; not trained RDMD or a Section 5.1 reproduction.",
+    "observed_lambda_effect": false,
     "evidence": [
       "outputs/claim4_rdmd_2d_toy/config.json",
       "outputs/claim4_rdmd_2d_toy/raw.json",
@@ -34,5 +46,5 @@
       "outputs/claim4_rdmd_2d_toy/SHA256SUMS"
     ]
   },
-  "last_known_git_commit": "0ec843c4a19c966a2773dbca8724bb696d1d18be"
+  "last_known_git_commit": "dec2800eb79f843c67cfed4eb8abb4262de139ad"
 }

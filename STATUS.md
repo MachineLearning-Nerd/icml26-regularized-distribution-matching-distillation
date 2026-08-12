@@ -1,8 +1,14 @@
 # Status
-- OpenReview ID: `KpaQc72q7m`
-- Contract: anchored 5 claims / 10 maximum points.
-- Source pinned: arXiv `2406.14762` archive/PDF (`evidence/source/SHA256SUMS`).
-- Compute: local CPU/local GTX 1050 only; no remote/HF/paid compute.
-- Claim 1: **inconclusive** after a pinned-primary-source/CPU feasibility audit. The theorem concerns theoretical optima under regularity/capacity/optimization qualifications; finite CPU optimization cannot establish or falsify universal gamma-convergence. Evidence: `evidence/claim1_attempt1/SOURCE_AUDIT.md`.
-- Next: independent review of the Claim 1 source/CPU audit before any Claim 1 toy; do not represent any finite diagnostic as theorem or AFHQ verification.
-- Claim 4: **toy** — local CPU 2-D Gaussian-to-8-Gaussian deterministic assignment surrogate at lambda 0/.2/1 retains raw samples, squared transport cost, radial target-fidelity proxy, and strict trajectory intersections. It is not trained RDMD or a Figure-5.1 reproduction. Evidence: `outputs/claim4_rdmd_2d_toy/`.
+
+- Classification: paper-associated, source-pinned local reproduction audit.
+- Paper: `Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation`.
+- Authors: Denis Rakitin, Ivan Shchekotov, and Dmitry Vetrov.
+- Venue note: the pinned paper is an ICML 2024 workshop paper; `icml26` is the collection prefix, not the paper venue.
+- OpenReview ID: `KpaQc72q7m`.
+- Source pinned: arXiv `2406.14762v1` PDF/source archive; checksums are in `evidence/source/SHA256SUMS`.
+- Compute: local CPU/local GTX 1050 only; no remote, paid, Hugging Face, or other external compute.
+- Claim 1: **inconclusive** after a source/CPU feasibility audit; finite optimization cannot verify or falsify the theoretical-optimum theorem.
+- Claim 4: **non-reproducing toy**; the reduced assignment surrogate produces identical metrics at `lambda=0`, `0.2`, and `1.0` and therefore does not show the paper's reported trade-off.
+- Claims 2, 3, and 5: source-audited or paper-reported, but not independently reproduced here.
+- Publication allowed: `false`.
+- Next: independent review of the Claim 1 audit; a faithful reproduction would require implementing the paper's diffusion models and obtaining the required data/checkpoints/compute.

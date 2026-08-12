@@ -7,4 +7,5 @@ def test_toy_tradeoff_and_artifacts():
   rows=list(csv.DictReader(open(Path(d)/'results.csv')))
   assert len(rows)==9
   assert all(float(r['trajectory_intersections'])>=0 for r in rows)
-  s=json.load(open(Path(d)/'summary.json')); assert s['verdict']=='toy'
+  s=json.load(open(Path(d)/'summary.json')); assert s['verdict']=='non_reproducing_toy'
+  assert s['observed_lambda_effect'] is False

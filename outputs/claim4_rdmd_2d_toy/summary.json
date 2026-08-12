@@ -17,7 +17,8 @@
       "transport_mse": 8.23704422526995
     }
   },
+  "observed_lambda_effect": false,
   "scope": "Reduced deterministic assignment surrogate preserving 2-D Gaussian/8-Gaussian, squared transport cost, target-fidelity proxy, and trajectory-intersection metric; not trained RDMD.",
   "source_claim": "Section 5.1",
-  "verdict": "toy"
+  "verdict": "non_reproducing_toy"
 }

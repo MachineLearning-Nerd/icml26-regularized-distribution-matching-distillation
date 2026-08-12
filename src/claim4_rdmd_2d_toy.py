@@ -41,7 +41,9 @@ def main():
  with (out/'results.csv').open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
  (out/'raw.json').write_text(json.dumps(raw,sort_keys=True))
- summary={"verdict":"toy","scope":"Reduced deterministic assignment surrogate preserving 2-D Gaussian/8-Gaussian, squared transport cost, target-fidelity proxy, and trajectory-intersection metric; not trained RDMD.","source_claim":"Section 5.1", "means":{str(l):{k:sum(r[k] for r in rows if r['lambda']==l)/3 for k in ('transport_mse','radial_target_mse','trajectory_intersections')} for l in (0.0,.2,1.0)},"controls":"lambda=0 unregularized surrogate and lambda=1 high-regularization surrogate"}
+ means={str(l):{k:sum(r[k] for r in rows if r['lambda']==l)/3 for k in ('transport_mse','radial_target_mse','trajectory_intersections')} for l in (0.0,.2,1.0)}
+ observed_lambda_effect=len({tuple(means[str(l)][k] for k in ('transport_mse','radial_target_mse','trajectory_intersections')) for l in (0.0,.2,1.0)}) > 1
+ summary={"verdict":"toy" if observed_lambda_effect else "non_reproducing_toy","scope":"Reduced deterministic assignment surrogate preserving 2-D Gaussian/8-Gaussian, squared transport cost, target-fidelity proxy, and trajectory-intersection metric; not trained RDMD.","source_claim":"Section 5.1", "means":means,"observed_lambda_effect":observed_lambda_effect,"controls":"lambda=0 unregularized surrogate and lambda=1 high-regularization surrogate"}
  (out/'summary.json').write_text(json.dumps(summary,indent=2,sort_keys=True)+'\n')
  (out/'config.json').write_text(json.dumps({"n":a.n,"seeds":[17,23,31],"lambdas":[0,.2,1.],"noise_sd":.35},indent=2)+'\n')
 if __name__=='__main__': main()
