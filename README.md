@@ -4,6 +4,7 @@ This repository contains an evidence-first audit of **Regularized Distribution M
 
 | Resource | Link |
 | --- | --- |
+| Repository | [MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation](https://github.com/MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation) |
 | Paper | [arXiv:2406.14762](https://arxiv.org/abs/2406.14762) |
 | OpenReview submission | [KpaQc72q7m](https://openreview.net/forum?id=KpaQc72q7m) |
 | Pinned source version | [arXiv:2406.14762v1](https://arxiv.org/abs/2406.14762v1) |
@@ -15,6 +16,7 @@ This repository contains an evidence-first audit of **Regularized Distribution M
 - **Paper version:** arXiv v1, submitted 20 June 2024.
 - **Venue note:** the pinned PDF says the work was accepted to the Structured Probabilistic Inference & Generative Modeling workshop of ICML 2024. The `icml26` prefix identifies this repository collection; it does not claim that this paper is an ICML 2026 paper.
 - **OpenReview note:** the repository preserves the OpenReview identifier supplied by the collection. OpenReview may present a browser verification page, so the pinned arXiv PDF/source archive are the primary evidence used here.
+- **Former repository name:** `icml26-repro-KpaQc72q7m-one-step-optimal-transport-rdmd`.
 
 ## Current status
 
@@ -73,7 +75,7 @@ The repository originally had two branches with different scopes:
 | `main` | The authoritative audit: source pin, Claim 4 toy, and Claim 1 source/CPU audit | **Kept** as the only published branch |
 | `master` | The initial source-pinning commit only; it did not contain the later audit artifacts | Default moved away, then stale remote branch removed |
 
-The local `backup/pre-main-branch-cleanup` branch preserves the former `master` tip for rollback during this audit; it is not part of the published branch interface. All published work is on `main`.
+The local `backup/pre-main-branch-cleanup` branch preserves the former `master` tip for rollback during this audit; it is not part of the published branch interface. The remote repository now exposes only `main`, which is also the default branch.
 
 ## Claim ledger: what each claim means and how it is produced
 
