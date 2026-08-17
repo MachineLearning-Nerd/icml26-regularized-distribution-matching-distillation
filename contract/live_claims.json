@@ -1,6 +1,7 @@
 {
   "orid": "KpaQc72q7m",
-  "title": "One-step Optimal Transport via Regularized Distribution Matching Distillation",
+  "title": "Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation",
+  "arxiv": "2406.14762",
   "source_snapshot": "outputs/live/20260803T063040Z/claims_anchored.json",
   "claims": [
     {

@@ -1,19 +1,15 @@
 {
   "schema_version": 1,
   "openreview_id": "KpaQc72q7m",
-  "paper": {
-    "title": "Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation",
-    "authors": [
-      "Denis Rakitin",
-      "Ivan Shchekotov",
-      "Dmitry Vetrov"
-    ],
-    "arxiv": "2406.14762v1",
-    "venue_note": "Accepted to the Structured Probabilistic Inference and Generative Modeling workshop of ICML 2024"
-  },
-  "classification": "paper-associated source-pinned local reproduction audit",
-  "phase": "claim_1_source_audit_and_claim_4_non_reproducing_toy_documented",
-  "next_action": "independent_review_claim_1_before_any_faithful_rdmd_training_reproduction",
+  "arxiv": "2406.14762v1",
+  "github_repository": "https://github.com/MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation",
+  "former_github_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-KpaQc72q7m-one-step-optimal-transport-rdmd",
+  "phase": "published_and_verified",
+  "current_branch": "main",
+  "branch_set": [
+    "main"
+  ],
+  "next_action": "select_next_icml_repository",
   "active_run_ids": [],
   "claim_attempt_counts": {
     "1": 1,
@@ -22,9 +18,16 @@
     "4": 1,
     "5": 0
   },
+  "claim_statuses": {
+    "C1": "INCONCLUSIVE_SOURCE_CPU_AUDIT",
+    "C2": "SOURCE_AUDITED_UNVERIFIED",
+    "C3": "PAPER_REPORTED_UNVERIFIED",
+    "C4": "NON_REPRODUCING_TOY",
+    "C5": "SOURCE_AUDITED_UNVERIFIED"
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
   "publication_allowed": false,
   "compute_policy": "local CPU/local GTX 1050 only; no HF cpu-upgrade, Jobs, paid, or remote compute",
-  "cpu_feasibility": "Claim 1 is a theoretical-optimum statement and cannot be established or falsified by finite CPU optimization; Claim 4's paper-faithful neural training path is not implemented here.",
   "claim_1_outcome": {
     "verdict": "inconclusive",
     "scope": "Pinned-primary-source theorem/CPU feasibility audit; finite CPU optimization cannot establish or falsify the universal theoretical-optimum convergence claim.",
@@ -45,6 +48,5 @@
       "outputs/claim4_rdmd_2d_toy/summary.json",
       "outputs/claim4_rdmd_2d_toy/SHA256SUMS"
     ]
-  },
-  "last_known_git_commit": "5daa79a3fd835e1c75fab661e38c588f7c81f064"
+  }
 }

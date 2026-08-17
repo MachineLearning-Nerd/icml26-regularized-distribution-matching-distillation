@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation",
+  "policy": "sha256 and byte length for every tracked artifact except mutable state and this manifest",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 44,
+      "sha256": "86c42cf2b20cae081af90a0740ca0f74d3a1ce77a3a51e770359d982af78115c"
+    },
+    {
+      "path": ".trackio/logbook/pages/claim-1-theorem-ot-limit/page.md",
+      "bytes": 555,
+      "sha256": "0af2e044d96b8842c89625df5aa0906f5f5e21e04d4b257a2b067e10206b154b"
+    },
+    {
+      "path": ".trackio/logbook/pages/claim-4-rdmd-toy/page.md",
+      "bytes": 239,
+      "sha256": "8b6ac815883e884860f39c3bf5ba2261163c68e25b2f4c14a025f70014de815c"
+    },
+    {
+      "path": "AUTHOR_THANK_YOU.md",
+      "bytes": 630,
+      "sha256": "365ea7a044a88368890d516819d23b8291bc3c1313258e2c970fa351dd3c7403"
+    },
+    {
+      "path": "BRANCH_AUDIT.md",
+      "bytes": 817,
+      "sha256": "6b4fff5ca23908e738cd976dc249951c6b8c91c739af177e4ddd6cb572c3ffcf"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 643,
+      "sha256": "0ca265e2f6719471f1b20128636955f15959d78be7ccb1ee7adffd1f43ed34df"
+    },
+    {
+      "path": "CLAIM_EVIDENCE.md",
+      "bytes": 4972,
+      "sha256": "f53ee16bec203bd7344bafdb16d15809bdf29ccf8b03dc3d71de1d239fb9de51"
+    },
+    {
+      "path": "ENVIRONMENT.md",
+      "bytes": 818,
+      "sha256": "f37fa63f6d47a2d5df668066b35ca3d9e64e511707e199a80737f2e42bc35204"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14406,
+      "sha256": "83d9ced6b600baaaccd4700a8d3505cd2c1662dcf31e3b5ebb46f0fac740118b"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 1739,
+      "sha256": "d08e887c8a0d9d620c525006c43820ddc8cd52d5bfec57353ae7edf1f632c31c"
+    },
+    {
+      "path": "SOURCE_AUDIT.md",
+      "bytes": 3634,
+      "sha256": "f477ed22acd7e0d513a93a4ec9116c3809b30b836773c9843e5446ca2095d389"
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 1679,
+      "sha256": "8bee3dad96050f9b63b6704f1669d4e3439c352c35adc6714c392055b01e9c30"
+    },
+    {
+      "path": "branch-audit.md",
+      "bytes": 185,
+      "sha256": "d818e918405c385f22d5c55cfe322187b7cf9a531ecac3d6b85a44a65776adce"
+    },
+    {
+      "path": "claims.json",
+      "bytes": 2419,
+      "sha256": "abb2c4ca82a4bce403238c18500ba26838f10f2018f37b5aa47d4d05c1662fba"
+    },
+    {
+      "path": "contract/live_claims.json",
+      "bytes": 1969,
+      "sha256": "af5fd52968269d917c796c5800c23012ece87544a0c85c475ce5cac9a76c6e85"
+    },
+    {
+      "path": "evidence/claim1_attempt1/SOURCE_AUDIT.md",
+      "bytes": 1240,
+      "sha256": "e3cc1397171e8505878d2ff832b5a45672c466472ba7919abcf0b0f1ba68ec71"
+    },
+    {
+      "path": "evidence/claim1_attempt1/source_excerpt.tex",
+      "bytes": 38791,
+      "sha256": "f80b498693b84e6970c9b1bf2c1a6cf2ba1642df432b4aee7f9ea9711c6f7c64"
+    },
+    {
+      "path": "evidence/source/SHA256SUMS",
+      "bytes": 184,
+      "sha256": "b87c679ffd2a251938018dbee6de2b34cf348c938965df80cc48cb80be2a5522"
+    },
+    {
+      "path": "evidence/source/arxiv-2406.14762-source.tar.gz",
+      "bytes": 16779646,
+      "sha256": "b94ec5ee2e7a223237e597569fc86149ee9483300bceecba074bf6d209d139ac"
+    },
+    {
+      "path": "evidence/source/arxiv-2406.14762.pdf",
+      "bytes": 20258846,
+      "sha256": "a986167d9f354b86aea38a1073bb888da97fd39a2ce40afd3f19ef5a7e86bb24"
+    },
+    {
+      "path": "outputs/claim1_attempt1/SHA256SUMS",
+      "bytes": 217,
+      "sha256": "601aa62f9c14a20043989183ebf4758b246a0206c844b3bb926557e799f7251e"
+    },
+    {
+      "path": "outputs/claim4_rdmd_2d_toy/README.md",
+      "bytes": 759,
+      "sha256": "fe3ce46fe55c0ee8d175245c7178fffc5d878c09427cf08dd35d44206e26ade5"
+    },
+    {
+      "path": "outputs/claim4_rdmd_2d_toy/SHA256SUMS",
+      "bytes": 310,
+      "sha256": "a2fe7334af87683c90c22033476c510246f9840bae73ae12475384e285d7b96a"
+    },
+    {
+      "path": "outputs/claim4_rdmd_2d_toy/config.json",
+      "bytes": 120,
+      "sha256": "5f83464ba0b5f28abc3019201faed41b6fafe50a878d307cdb6fecd26d80b67f"
+    },
+    {
+      "path": "outputs/claim4_rdmd_2d_toy/raw.json",
+      "bytes": 123594,
+      "sha256": "266bcf6c8b3aa105a513128d2bd092d601cf6cf4633fe7f9ff1edcb92881a9d3"
+    },
+    {
+      "path": "outputs/claim4_rdmd_2d_toy/results.csv",
+      "bytes": 555,
+      "sha256": "4cb5db3ef4a8b262d9777d389fdfa010e9a0b2b0dd7de0b280a009ff55ae3b61"
+    },
+    {
+      "path": "outputs/claim4_rdmd_2d_toy/summary.json",
+      "bytes": 891,
+      "sha256": "5d8b2dc147d0273b23bd0b47ddf8d8f182f05b65f9037ff064c7339832acd619"
+    },
+    {
+      "path": "src/claim1_source_audit.py",
+      "bytes": 143,
+      "sha256": "1513a561fb20868f0cda30c96a0306b82e0320d49a8702d0200c6c321de9230b"
+    },
+    {
+      "path": "src/claim4_rdmd_2d_toy.py",
+      "bytes": 3313,
+      "sha256": "9ef4ae3e0d2af136b7d0daada989789e6303bfe50a51d764aadad3500e4ab229"
+    },
+    {
+      "path": "tests/test_claim1_source_audit.py",
+      "bytes": 503,
+      "sha256": "0f50468e46c536de7d65a271ade35e640bab66b826d1beedfb3553a6b0592d5e"
+    },
+    {
+      "path": "tests/test_claim4.py",
+      "bytes": 553,
+      "sha256": "d5e4d2fd96faf3d641df8f6b5a5812bca2aa277c85a42c976bf517fff968e7b4"
+    },
+    {
+      "path": "verify_final.py",
+      "bytes": 8262,
+      "sha256": "b44147ef2e855c09968a135743df51147ed73e2c9765025866820634c7576985"
+    }
+  ]
+}

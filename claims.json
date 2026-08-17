@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation",
+  "former_repository": "https://github.com/MachineLearning-Nerd/icml26-repro-KpaQc72q7m-one-step-optimal-transport-rdmd",
+  "paper": {
+    "title": "Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation",
+    "authors": [
+      "Denis Rakitin",
+      "Ivan Shchekotov",
+      "Dmitry Vetrov"
+    ],
+    "arxiv": "2406.14762v1",
+    "openreview": "KpaQc72q7m",
+    "venue": "Structured Probabilistic Inference & Generative Modeling workshop of ICML 2024"
+  },
+  "overall_verdict": "INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY",
+  "publication_allowed": false,
+  "claims": [
+    {
+      "id": "C1",
+      "paper_claim": "Theorem 3.1 states that as lambda approaches zero, the theoretical RDMD optimum converges to the quadratic-cost Monge optimal-transport map under mild regularity conditions.",
+      "status": "INCONCLUSIVE_SOURCE_CPU_AUDIT",
+      "evidence": [
+        "evidence/claim1_attempt1/SOURCE_AUDIT.md",
+        "evidence/claim1_attempt1/source_excerpt.tex"
+      ]
+    },
+    {
+      "id": "C2",
+      "paper_claim": "RDMD combines a diffusion-distribution matching KL term with lambda times expected transport cost and optimizes generator and fake diffusion objectives by coordinate descent.",
+      "status": "SOURCE_AUDITED_UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv-2406.14762-source.tar.gz"
+      ]
+    },
+    {
+      "id": "C3",
+      "paper_claim": "AFHQv2 Cat-to-Wild translation reports the claimed FID and faithfulness trade-off against diffusion baselines.",
+      "status": "PAPER_REPORTED_UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv-2406.14762-source.tar.gz"
+      ]
+    },
+    {
+      "id": "C4",
+      "paper_claim": "The 2-D Gaussian-to-8-Gaussian experiment shows a useful lambda=0.2 fidelity/correspondence trade-off.",
+      "status": "NON_REPRODUCING_TOY",
+      "evidence": [
+        "src/claim4_rdmd_2d_toy.py",
+        "outputs/claim4_rdmd_2d_toy/summary.json"
+      ]
+    },
+    {
+      "id": "C5",
+      "paper_claim": "Appendix A gives a formal soft-to-hard convergence argument supporting asymptotic optimality.",
+      "status": "SOURCE_AUDITED_UNVERIFIED",
+      "evidence": [
+        "evidence/source/arxiv-2406.14762-source.tar.gz"
+      ]
+    }
+  ]
+}

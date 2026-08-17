@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "RDMD source-pinned ICML 2026 collection audit"
+message: "If you use this audit, please cite the original RDMD paper."
+type: software
+authors:
+  - family-names: Rakitin
+    given-names: Denis
+  - family-names: Shchekotov
+    given-names: Ivan
+  - family-names: Vetrov
+    given-names: Dmitry
+abstract: "Source-pinned audit with a bounded non-reproducing toy for Regularized Distribution Matching Distillation."
+repository-code: "https://github.com/MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation"
+url: "https://arxiv.org/abs/2406.14762"
+identifiers:
+  - type: arxiv
+    value: "2406.14762"

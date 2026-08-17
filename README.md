@@ -1,4 +1,10 @@
-# RDMD: Source-Pinned Reproduction Audit
+# ICML 2026 — Regularized Distribution Matching Distillation
+
+Source-pinned audit of the paper Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation.
+
+- Canonical repository: https://github.com/MachineLearning-Nerd/icml26-regularized-distribution-matching-distillation
+- Former repository name: icml26-repro-KpaQc72q7m-one-step-optimal-transport-rdmd
+- Repository owner and canonical commit identity: MachineLearning-Nerd
 
 This repository contains an evidence-first audit of **Regularized Distribution Matching Distillation for One-step Unpaired Image-to-Image Translation**. It is a local reproduction workspace, not the authors' official implementation. The repository does not currently contain a full RDMD training pipeline, pretrained checkpoints, or a completed reproduction of the paper's benchmark results.
 
@@ -20,7 +26,7 @@ This repository contains an evidence-first audit of **Regularized Distribution M
 
 ## Current status
 
-**Overall result: incomplete and evidence-first.** The source artifacts are verified, Claim 1 has an inconclusive source/CPU feasibility audit, and Claim 4 has a reduced local toy. Neither result establishes the paper's theorem or benchmark numbers.
+**Overall result: INCONCLUSIVE_SCOPED_TO_SOURCE_AND_BOUNDED_TOY.** The source artifacts are verified, Claim 1 has an inconclusive source/CPU feasibility audit, and Claim 4 has a non-reproducing local toy. Neither result establishes the paper's theorem or benchmark numbers. Full-paper publication is not allowed.
 
 The local policy for this audit is CPU and the local GTX 1050 only. No remote, paid, Hugging Face, or other external compute was used. The machine-readable state records `publication_allowed: false`.
 
@@ -49,6 +55,16 @@ The paper studies a 2-D Gaussian-to-8-Gaussian toy and unpaired AFHQv2 Cat-to-Wi
 | Path | Purpose |
 | --- | --- |
 | `AUTONOMOUS_STATE.json` | Machine-readable phase, compute policy, next action, and claim outcomes |
+| `CLAIM_EVIDENCE.md` | Claim-by-claim paper production paths and local evidence boundary |
+| `SOURCE_AUDIT.md` | Pinned artifact checksums and source-member inventory |
+| `EVIDENCE_MANIFEST.json` | Hash and byte manifest for tracked audit artifacts |
+| `REPORT.md` | Executive audit result and reproduction decision |
+| `ENVIRONMENT.md` | Compute policy and reproducibility boundary |
+| `AUTHOR_THANK_YOU.md` | Credit and thank-you note to the authors |
+| `CITATION.cff` | Machine-readable paper citation |
+| `BRANCH_AUDIT.md` | Canonical branch and commit-identity audit |
+| `claims.json` | Machine-readable claim status ledger |
+| `verify_final.py` | Lightweight final-state verifier |
 | `STATUS.md` | Short human-readable audit status |
 | `contract/live_claims.json` | Five paper claims tracked with explicit verification status |
 | `evidence/source/arxiv-2406.14762.pdf` | Pinned paper PDF |
@@ -75,7 +91,7 @@ The repository originally had two branches with different scopes:
 | `main` | The authoritative audit: source pin, Claim 4 toy, and Claim 1 source/CPU audit | **Kept** as the only published branch |
 | `master` | The initial source-pinning commit only; it did not contain the later audit artifacts | Default moved away, then stale remote branch removed |
 
-The local `backup/pre-main-branch-cleanup` branch preserves the former `master` tip for rollback during this audit; it is not part of the published branch interface. The remote repository now exposes only `main`, which is also the default branch.
+The former master branch, local backup refs, and original ref were removed after a complete recovery bundle was written. The published repository is intentionally single-branch with main as its default.
 
 ## Claim ledger: what each claim means and how it is produced
 
@@ -104,6 +120,16 @@ The local toy preserves only a small set of concepts: 2-D Gaussian inputs, eight
 - the AFHQv2 benchmark.
 
 Because the generated `results.csv` has the same values for all three lambda settings, it is a useful negative diagnostic of the current surrogate, not a reproduction of Section 5.1.
+
+## Final verification
+
+Run:
+
+~~~bash
+python3 verify_final.py
+~~~
+
+The verifier checks the canonical repository URL, one-branch state, MachineLearning-Nerd commit attribution, claim/status JSON, source checksums and archive inventory, the non-reproducing toy outputs, and the tracked-file evidence manifest. It must print FINAL_AUDIT=VERIFIED.
 
 ## Reproduction boundary
 
